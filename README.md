@@ -78,6 +78,14 @@
 - To set an environment variable in Linux, use the export command in the shell.
   - `export VAR_NAME="value"`
     - E.g. `export MY_VAR="Hello World"`
+- Difference when setting them:
+  - Setting a regular variable = 
+    - `name="ali"`
+      - This will set the variable name as ali. However it will only save for **this terminal session ONLY**. Once the terminal is closed this variable is removed.
+    - Setting an env variable = 
+      - `export name="ali"`
+        - When using the `export` command, it makes the variable an **enviroment variable**, which means it becomes **available to other processes and applications as well** (not just in current shell session)
+
 
 ### How can you make an environment variable **persistent**?
 - To make an environment variable persistent (i.e., available across sessions), you need to add it to a configuration file that is executed when a new session starts.
